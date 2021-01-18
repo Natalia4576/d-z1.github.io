@@ -42,7 +42,73 @@ a{
 	top: 7px;
 	background: #00beff;
 	position: absolute;
-	transition: all 2s ease;
+}
+.list_nav_item:hover{
+	transition: 0.6s;
+}
+hr{
+	border: none; 
+    background-color: lightgrey; 
+    color: grey; 
+    width: 100%;
+    position: relative;
+    top: 20px;
+    opacity: 0.6;
+    height: 1px;
+}
+.container h1{
+	font-size: 75px;
+	color: white;
+	line-height: 30px;
+	padding-top: 275px;
+	text-align: center;
+	font-family: Hind, sans-serif;
+}
+.container h3{
+	font-size: 25px;
+	color: white;
+	font-weight: 300;
+	opacity: 0.8;
+	position: relative;
+	top: 20px;
+	text-align: center;
+	font-family: Hind, sans-serif;
+}
+.button{
+	background: white;
+	width: 250px;
+	height: 65px;
+	position: relative;
+	top: 65px;
+	margin: 0 auto;
+}
+.button_img{
+	z-index: 1;
+	position: relative;
+	top: 23px;
+	opacity: 0.7;
+	left: 30px;
+}
+.button p{
+	text-transform: uppercase;
+	font-family: Hind, sans-serif;
+	font-weight: bold;
+	position: relative;
+	font-size: 16px;
+	color: grey;
+	left: 63px;
+	top: -15px;
+}
+.button:hover{
+	background: black;
+	transition: 0.6s;
+}
+.button_img_white{
+	position: relative;
+	top: 23px;
+	left: 5px;
 }
 
-
+.button:not(:hover){
+  transition: 0.6s;
+}
