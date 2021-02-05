@@ -229,7 +229,7 @@ hr{
 	background: white;
 	margin-top: 120px;
 	border: 8px solid transparent;
-    box-shadow: 0 0 8px rgba(0, 0, 0, 0.06);
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.09);
 	float: left;
 }
 #services_item_blue{
@@ -250,9 +250,11 @@ hr{
 	padding-top: 50px;
 	padding-left: 50px;
 	font-size: 25px;
+	transition: 0.5s;
 }
 .services_item p{
 	color: black;
+	transition: 0.5s;
 	font-size: 17px;
 	opacity: 0.9;
 	padding-left: 50px;
@@ -265,7 +267,23 @@ hr{
 	position: relative;
 	left: 45px;
 	top: 45px;
+	transition: 0.5s;
 }
 .services_item:hover .services_item_img{
-	display: none;
+	opacity: 0;
+}
+.services_item:hover h3{
+	transform: translateY(-50px);
+}
+.services_item:hover p{
+	transform: translateY(-50px);
+}
+.results{
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: url(../img/background_phone.jpg);
+	background-repeat: no-repeat;
+	clear: both;
 }
