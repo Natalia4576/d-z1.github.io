@@ -219,3 +219,53 @@ hr{
 #details:hover{
 	color: #5B585A;
 }
+.services_img{
+	display: inline-block;
+	padding-top: 50px;
+}
+.services_item{
+	width: 533px;
+	height: 360px;
+	background: white;
+	margin-top: 120px;
+	border: 8px solid transparent;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.06);
+	float: left;
+}
+#services_item_blue{
+	background: #00C0D3;
+}
+#services_item_blue p{
+	color: white;
+}
+#services_item_blue h3{
+	color: white;
+}
+#services_item1{
+	margin-top: 0;
+}
+.services_item h3{
+	color: black;
+	font-family: Hind, sans-serif;
+	padding-top: 50px;
+	padding-left: 50px;
+	font-size: 25px;
+}
+.services_item p{
+	color: black;
+	font-size: 17px;
+	opacity: 0.9;
+	padding-left: 50px;
+	color: gray;
+	font-size: 19px;
+	line-height:25px;
+	font-family: Hind, sans-serif;
+}
+.services_item_img{
+	position: relative;
+	left: 45px;
+	top: 45px;
+}
+.services_item:hover .services_item_img{
+	display: none;
+}
