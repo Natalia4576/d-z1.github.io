@@ -10,6 +10,8 @@ body{
     right: 0;
     top: 0; 
     bottom: 0;
+    z-index: 3;
+    position: relative;
 	background-image: url(../img/background-img12.png);
 }
 .header_top_items{
@@ -115,8 +117,10 @@ hr{
 }
 .main{
 	width: 100%;
-	height: 700px;
+	height: 2289px;
 	position: relative;
+	background: white;
+	padding-top: 30px;
 }
 .main_title{
 	line-height: 35px;
@@ -191,7 +195,7 @@ hr{
 	width: 15px;
 	height: 4px;
 	left: 237px;
-	top: 761.3px;
+	top: 831.2px;
 	background: #00beff;
 	position: absolute;
 }
@@ -200,7 +204,7 @@ hr{
 	width: 15px;
 	height: 4px;
 	left: 796px;
-	top: 761.3px;
+	top: 831.2px;
 	background: #00beff;
 	position: absolute;
 }
@@ -209,7 +213,7 @@ hr{
 	width: 15px;
 	height: 4px;
 	left: 1355px;
-	top: 761.3px;
+	top: 831.2px;
 	background: #00beff;
 	position: absolute;
 }
@@ -243,6 +247,7 @@ hr{
 }
 #services_item1{
 	margin-top: 0;
+	margin-bottom: 120px;
 }
 .services_item h3{
 	color: black;
@@ -278,12 +283,53 @@ hr{
 .services_item:hover p{
 	transform: translateY(-50px);
 }
-.results{
+.results_img{
 	width: 100%;
 	height: 100%;
-	top: 0;
+	top: 200px;
 	left: 0;
 	background: url(../img/background_phone.jpg);
 	background-repeat: no-repeat;
 	clear: both;
+	position: fixed;
+	z-index: -3;
+}
+.results h2{
+	color: white;
+	text-align: center;
+	font-size: 55px;
+	padding-top: 120px;
+	font-family: Hind, sans-serif;
+}
+.results p{
+	color: white;
+	text-align: center;
+	font-size: 23px;
+	padding-bottom: 200px;
+	opacity: 0.8;
+	font-family: Hind, sans-serif;
+}
+.button_top{
+ 	right: 20px;
+ 	z-index: 2;
+ 	width: 60px;
+  	height: 60px;
+  	background: grey;
+  	text-decoration: none;
+  	position: fixed;
+  	bottom: 20px;
+  	text-align: center;
+  	line-height: 58px;
+  	border-radius: 4px;
+  	text-align: center;
+  	color:white;
+  	font-size: 18px;
+  	transition: 0.5s;
+  	font-family: Hind, sans-serif;
+}
+.button_top:hover{
+	background: #282923;
+}
+html {
+  scroll-behavior: smooth;
 }
