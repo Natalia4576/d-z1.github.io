@@ -14,11 +14,6 @@ body{
     position: relative;
 	background-image: url(../img/background-img12.png);
 }
-.header_top_items{
-	width: 100%;
-	height: 115px;
-	border: 3px solid red;
-}
 .logo{
 	padding-left: 120px;
 	padding-top: 50px;
@@ -117,7 +112,7 @@ hr{
 }
 .main{
 	width: 100%;
-	height: 2289px;
+	height: 2330px;
 	position: relative;
 	background: white;
 	padding-top: 30px;
@@ -264,7 +259,6 @@ hr{
 	opacity: 0.9;
 	padding-left: 50px;
 	color: gray;
-	font-size: 19px;
 	line-height:25px;
 	font-family: Hind, sans-serif;
 }
@@ -286,26 +280,26 @@ hr{
 .results_img{
 	width: 100%;
 	height: 100%;
-	top: 200px;
+	top: 0;
 	left: 0;
+	position: fixed;
 	background: url(../img/background_phone.jpg);
 	background-repeat: no-repeat;
 	clear: both;
-	position: fixed;
 	z-index: -3;
 }
 .results h2{
 	color: white;
 	text-align: center;
 	font-size: 55px;
-	padding-top: 120px;
+	margin-top: 150px;
 	font-family: Hind, sans-serif;
 }
 .results p{
 	color: white;
 	text-align: center;
 	font-size: 23px;
-	padding-bottom: 200px;
+	padding-bottom: 260px;
 	opacity: 0.8;
 	font-family: Hind, sans-serif;
 }
@@ -332,4 +326,27 @@ hr{
 }
 html {
   scroll-behavior: smooth;
+}
+.gallery{
+	width: 100%;
+	height: 1100px;
+	background: white;
+}
+.gallery_item{
+	display: inline-block;
+	transition: 0.5s;
+	margin-left: 10px;
+	margin-top: 10px;
+}
+.gallery_item:nth-child(1){
+	margin-left: 130px;
+	margin-top: 80px;
+}
+.gallery_item:nth-child(3){
+	margin-left: 130px;
+}
+.gallery_item:hover{
+	box-shadow: 3px 3px #00C0D3, 4px 4px #00C0D3, 5px 5px #00C0D3, 6px 6px #00C0D3, 7px 7px #00C0D3, 8px 8px #00C0D3, 9px 9px #00C0D3;
+ 	transform: translateX(-5px);
+  	transform: translateX(-5px);
 }
