@@ -318,7 +318,7 @@ a{
   	text-align: center;
   	color:white;
   	font-size: 18px;
-  	transition: 0.5s;
+  	transition: 0.8s;
   	font-family: Hind, sans-serif;
 }
 .button_top:hover{
@@ -548,68 +548,84 @@ li{
 	top: -33px;
 	position: relative;
 	font-weight: bold;
-	padding-left: 75px;
+	margin-left: 75px;
+	opacity: 0.6;
 	font-family: Hind, sans-serif;
 }
 .footer_line_1{
 	border: none; 
     background-color: black; 
-    color: black; 
+    color: gray; 
     width: 1400px;
     margin: 0;
     position: relative;
     left: 203px;
     top: -10px;
-    opacity: 0.6;
+    opacity: 0.5;
     height: 2px;
 }
 .footer_line_2{
 	border: none; 
     background-color: black; 
-    color: black; 
+    color: gray; 
     width: 1400px;
     margin: 0;
     position: relative;
     left: 203px;
     top: 100px;
-    opacity: 0.6;
+    opacity: 0.5;
     height: 2px;
 }
 .facebook_icon{
-	border: 2px solid black;
+	border: 2px solid #838280;
 	border-radius: 180px;
-	padding: 3px;
+	box-shadow: 3px 3px #00C0D3, 4px 4px #00C0D3, 5px 5px #00C0D3, 6px 6px #00C0D3, 7px 7px #00C0D3, 8px 8px #00C0D3, 9px 9px #00C0D3;
 	position: relative;
 	left: 205px;
+	opacity: 0.6;
+	z-index: 4;
 	top: 80px;
 }
-.youtube_icon{
-	border: 2px solid black;
-	border-radius: 180px;
-	padding: 9px;
+.facebook_icon_1{
 	position: relative;
-	left: 240px;
-	top: 80px;
+	left: 149px;
+	opacity: 0;
+	top: 78px;
+	z-index: 1;
 }
 .twitter_icon{
-	border: 2px solid black;
+	border: 2px solid #838280;
 	border-radius: 180px;
-	padding: 3px;
+	box-shadow: 3px 3px #00C0D3, 4px 4px #00C0D3, 5px 5px #00C0D3, 6px 6px #00C0D3, 7px 7px #00C0D3, 8px 8px #00C0D3, 9px 9px #00C0D3;
 	position: relative;
-	left: 275px;
+	opacity: 0.6;
+	left: 224px;
 	top: 80px;
+	z-index: 4;
+}
+.twitter_color_icon_1{
+	position: relative;
+	left: 168px;
+	opacity: 0;
+	top: 78px;
+	z-index: 1;
 }
 .telegram_icon{
-	border: 2px solid black;
+	border: 2px solid #838280;
 	border-radius: 180px;
-	padding: 3px;
+	box-shadow: 3px 3px #00C0D3, 4px 4px #00C0D3, 5px 5px #00C0D3, 6px 6px #00C0D3, 7px 7px #00C0D3, 8px 8px #00C0D3, 9px 9px #00C0D3;
 	position: relative;
-	left: 310px;
+	left: 245px;
+	opacity: 0.6;
 	top: 80px;
+	z-index: 4;
 }
-.telegram_icon:hover{
-	background: black;
-	background-color: white;
+.telegram_color_icon_1{
+	position: relative;
+	left: 189px;
+	opacity: 0;
+	top: 78px;
+	z-index: 1;
 }
 .signup{
 	position: relative;
@@ -621,13 +637,27 @@ li{
 	color: black;
 	left: 1117px;
 	top: 30px;
+	opacity: 0.6;
 	font-size: 20px;
 	border: 2px solid black;
 }
-.signup:hover{
-	background: black;
-	color: white;
-	transition: 0.5s;
+.signup:after {
+  content: "";
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  border: 2px solid rgba(0, 0, 0, 0);
+  position: absolute;
+  transition: .4s;
+}
+.signup:hover:after {
+  border-color: black;
+  width: calc(100% - 10px);
+  height: calc(100% + 10px);
 }
 .footer_text{
 	margin-top: 65px;
@@ -638,4 +668,62 @@ li{
 }
 .signup:not(:hover){
   transition: 0.5s;
+}
+.facebook_icon:hover{
+	opacity: 0;
+	transition: 0.5s;
+	box-shadow: 3px 3px #00C0D3, 4px 4px #00C0D3, 5px 5px #00C0D3, 6px 6px #00C0D3, 7px 7px #00C0D3, 8px 8px #00C0D3, 9px 9px #00C0D3;
+}
+.facebook_link:hover .facebook_icon_1{
+	opacity: 1;
+	transition: 0.5s;
+} 
+.facebook_link:not(:hover) .facebook_icon_1{
+	transition: 0.5s;
+} 
+.facebook_icon:not(:hover){
+	transition: 0.5s;
+}
+.twitter_icon:hover{
+	opacity: 0;
+	transition: 0.5s;
+}
+.twitter_link:hover .twitter_color_icon_1{
+	opacity: 1;
+	transition: 0.5s;
+} 
+.twitter_link:not(:hover) .twitter_color_icon_1{
+	transition: 0.5s;
+} 
+.twitter_icon:not(:hover){
+	transition: 0.5s;
+}
+
+.telegram_icon:hover{
+	opacity: 0;
+	transition: 0.5s;
+}
+.telegram_link:hover .telegram_color_icon_1{
+	opacity: 1;
+	transition: 0.5s;
+} 
+.telegram_link:not(:hover) .telegram_color_icon_1{
+	transition: 0.5s;
+} 
+.telegram_icon:not(:hover){
+	transition: 0.5s;
+}
+.footer_list_nav_item:after {
+	display: block;
+	position: absolute;
+	left: 0; 
+	width: 0;
+	height: 3px; 
+	background-color: #00C0D3; 
+	content: "";
+	transition: width 0.3s ease-out;
+}
+.footer_list_nav_item:hover:after,
+.footer_list_nav_item:focus:after {
+	width: 100%; 
 }
