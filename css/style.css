@@ -44,7 +44,7 @@ a{
 	background: #00beff;
 	position: absolute;
 }
-hr{
+.header hr{
 	border: none; 
     background-color: lightgrey; 
     color: grey; 
@@ -308,7 +308,7 @@ hr{
  	z-index: 2;
  	width: 60px;
   	height: 60px;
-  	background: grey;
+  	background: #D5D4D0;
   	text-decoration: none;
   	position: fixed;
   	bottom: 20px;
@@ -472,4 +472,170 @@ li{
   border-color: #00beff;
   width: calc(100% - 10px);
   height: calc(100% + 10px);
+}
+.reviews{
+	width: 100%;
+	height: 900px;
+	padding-top: 20px;
+	background: white;
+}
+.reviews h2{
+	font-family: Hind, sans-serif;
+	font-size: 43px;
+	padding-left: 130px;
+	padding-top: 80px;
+}
+.reviews p{
+	opacity: 0.7;
+	padding-left: 170px;
+	padding-top: 10px;
+	font-size: 22px;
+	width: 1200px;
+	font-family: Hind, sans-serif;
+}
+.customer_review{
+	opacity: 0.8;
+	padding-left: 950px;
+	padding-top: 10px;
+	font-size: 22px;
+	font-family: Hind, sans-serif;
+}
+.customer_review span{
+	font-weight: bold;
+}
+.map{
+	width: 100%;
+	padding-top: 50px;
+}
+.reviews_line_1{
+	border-left: 8px solid #BFE2FF;
+    height: 100px;
+    margin-top: -10px;
+    float: left;
+    margin-left: 140px;
+}
+.reviews_line_2{
+	border-left: 8px solid #BFE2FF;
+    height: 90px;
+    margin-top: 130px;
+    position: absolute;
+    left: 140px;
+}
+.reviews_line_1:before{
+	content: '”';
+	background: white;
+	position: relative;
+	top: 89px;
+	left: -17px;
+	font-size: 83px;
+	font-family: Hind, sans-serif;
+	color: #00beff;
+}
+.footer{
+	width: 100%;
+	height: 500px;
+	background: #F7F6F2;
+}
+.footer_list_nav{
+	padding-top: 130px;
+	padding-left: 130px;
+}
+.footer_list_nav_item{
+	text-transform: uppercase;
+	font-size: 19px;
+	display: inline-block;
+	color: black;
+	top: -33px;
+	position: relative;
+	font-weight: bold;
+	padding-left: 75px;
+	font-family: Hind, sans-serif;
+}
+.footer_line_1{
+	border: none; 
+    background-color: black; 
+    color: black; 
+    width: 1400px;
+    margin: 0;
+    position: relative;
+    left: 203px;
+    top: -10px;
+    opacity: 0.6;
+    height: 2px;
+}
+.footer_line_2{
+	border: none; 
+    background-color: black; 
+    color: black; 
+    width: 1400px;
+    margin: 0;
+    position: relative;
+    left: 203px;
+    top: 100px;
+    opacity: 0.6;
+    height: 2px;
+}
+.facebook_icon{
+	border: 2px solid black;
+	border-radius: 180px;
+	padding: 3px;
+	position: relative;
+	left: 205px;
+	top: 80px;
+}
+.youtube_icon{
+	border: 2px solid black;
+	border-radius: 180px;
+	padding: 9px;
+	position: relative;
+	left: 240px;
+	top: 80px;
+}
+.twitter_icon{
+	border: 2px solid black;
+	border-radius: 180px;
+	padding: 3px;
+	position: relative;
+	left: 275px;
+	top: 80px;
+}
+.telegram_icon{
+	border: 2px solid black;
+	border-radius: 180px;
+	padding: 3px;
+	position: relative;
+	left: 310px;
+	top: 80px;
+}
+.telegram_icon:hover{
+	background: black;
+	background-color: white;
+}
+.signup{
+	position: relative;
+	width: 160px;
+	height: 40px;
+	font-family: Hind, sans-serif;
+	line-height: 38px;
+	text-align: center;
+	color: black;
+	left: 1117px;
+	top: 30px;
+	font-size: 20px;
+	border: 2px solid black;
+}
+.signup:hover{
+	background: black;
+	color: white;
+	transition: 0.5s;
+}
+.footer_text{
+	margin-top: 65px;
+	margin-left: 203px;
+	font-family: Hind, sans-serif;
+	font-size: 17px;
+	opacity: 0.7;
+}
+.signup:not(:hover){
+  transition: 0.5s;
 }
